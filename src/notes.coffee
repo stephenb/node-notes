@@ -19,16 +19,16 @@ class Notes
   #
   @patterns =
     todo:
-      regexp: /^.*(#|\/\/|\/\*)\s*TODO\W*/
+      regexp: /^.*(#|\/\/|\/\*)\s*TODO\W*/i
       label:  "✓ TODO".underline.magenta
     note:
-      regexp: /^.*(#|\/\/|\/\*)\s*NOTE\W*/
+      regexp: /^.*(#|\/\/|\/\*)\s*NOTE\W*/i
       label:  "✐ NOTE".underline.blue
     optimize:
-      regexp: /^.*(#|\/\/|\/\*)\s*OPTIMIZE\W*/
+      regexp: /^.*(#|\/\/|\/\*)\s*OPTIMIZE\W*/i
       label:  "↘ OPTIMIZE".underline.yellow
     fixme:
-      regexp: /^.*(#|\/\/|\/\*)\s*FIXME\W*/
+      regexp: /^.*(#|\/\/|\/\*)\s*FIXME\W*/i
       label:  "☂ FIXME".underline.red
   
   # You can also customize what types of file extensions will be filtered out of annotation.
