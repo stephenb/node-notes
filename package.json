@@ -9,7 +9,8 @@
   },
   "main": "./lib/notes",
   "scripts": {
-    "build": "cake build"
+    "build": "cake build",
+    "build:watch": "nodemon -q -w src -e js,coffee -x npm run -s build"
   },
   "engines": {
     "node": ">= v0.4.7"
